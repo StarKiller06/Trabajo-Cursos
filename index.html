@@ -6,102 +6,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title> Curos Online </title>
+    <title>Cursos de Programación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .header img {
+            width: 200px;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin-left: 10px;
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li {
+            float: left;
+        }
+
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .menu li a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .course {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .course img {
+            width: 100px;
+            height: 60px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-   
-
     <header class="header">
-        <img style="display: flex; align-items: flex-start; width: 200px; margin-top: 20px; margin-left: 20px;"
-            src="img/logo.jpg" alt="">
-        <a href="https://instagram.com"><img
-
-                style="margin-top: -40px; margin-left: 20px; margin-right:20px; float: right; color: white; width: 30px;"
-                src="img/inst.png.opdownload"></a>
-        <a href="https://twitter.com"><img
-
-                style="margin-top: -40px; margin-left: 20px; margin-right:80px; float: right; color: white; width: 30px;"
-                src="img/twit.png.opdownload"></a>
-        <a href="https://twitter.com"><img
-
-                style="margin-top: -40px; margin-left: 20px; margin-right:125px; float: right; color: white; width: 60px;"
-                src="img/logotipo-facebook.png"></a>
+        <img src="img/logo.jpg" alt="Logo">
+        <div class="social-icons">
+            <a href="https://facebook.com"><img src="img/logotipo-facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="img/twit.png.opdownload" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="img/inst.png.opdownload" alt="Instagram"></a>
+        </div>
     </header>
 
     <ul class="menu">
         <li><a href="file.html">File</a></li>
-        <li><a style="color: rgb(248, 245, 240);" href="index.html">Edit</a></li>
+        <li><a href="index.html">Edit</a></li>
         <li><a href="view.html">View</a></li>
         <li><a href="help.html">Help</a></li>
     </ul>
 
-    <ul class="menu2">
-        <li><a href="file.html"><img src="img/Files-PNG-HD.png" width="10px"> File</a></li>
-        <li><a style="color: rgb(248, 245, 240);" href="index.html"><img src="img/edit.png" width="10px"> Edit</a></li>
-        <li><a href="view.html"><img src="img/view.png" width="10px"> View</a></li>
-        <li><a href="help.html"><img src="img/help.png" width="10px"> Help</a></li>
-    </ul>
-    <br>
-    <img src="https://www.elestudiante.com.co/wp-content/uploads/2020/04/cursos-online-de-programacion.jpg" width="500px" height="400px" alt="">
-    <br>
-    <h1 style="color: black;">Cursos en oferta!</h1>
+    <div class="content">
+        <img src="https://cursando.cl/wp-content/uploads/2019/04/cursos-de-programacion-chile.jpg" width="500px" height="400px" alt="Cursos de Programación">
+        <h1>Cursos en oferta!</h1>
 
-    
-        <a href="js.html" style="text-decoration: none; color: unset">
-            <div class="select1" style="color: black; float: right; margin: 20px">
-                <img src="img/js.jpg" width="100px" height="60px" alt="">
-                <p>Curso de html</p>
-                <p>$250.000</p>
-                <a href="js.html" style="color: black;"> Ver más </a>
-                <br>
-            </div>
+        <div class="course">
+            <img src="img/js.jpg" alt="Curso de JavaScript">
+            <p>Curso de JavaScript</p>
+            <p>$250.000</p>
+            <a href="js.html">Ver más</a>
+        </div>
 
+        <div class="course">
+            <img src="img/html.jpg" alt="Curso de HTML">
+            <p>Curso de HTML</p>
+            <p>$250.000</p>
+            <a href="html5.html">Ver más</a>
+        </div>
 
+        <div class="course">
+            <img src="img/php.jpg" alt="Curso de PHP">
+            <p>Curso de PHP</p>
+            <p>$250.000</p>
+            <a href="php.html">Ver más</a>
+        </div>
 
-            <a href="html5.html" style="text-decoration: none; color: unset">
-                <div class="select1" style="color: black; float: right; margin: 20px">
-                    <img src="img/html.jpg" width="100px" height="60px" alt="">
-                    <p>Curso de JavaScript</p>
-                    <p>$250.000</p>
-                    <a href="html5.html" style="color: black;"> Ver más </a>
-                    <br>
-                </div>
+        <div class="course">
+            <img src="img/java.jpg" alt="Curso de Java">
+            <p>Curso de Java</p>
+            <p>$250.000</p>
+            <a href="java.html">Ver más</a>
+        </div>
 
-            <a href="php.html" style="text-decoration: none; color: unset">
-                <div class="select1" style="color: black; float: right; margin: 20px">
-                    <img src="img/php.jpg" width="100px" height="60px" alt="">
-                    <p>Curso de PHP</p>
-                    <p>$250.000</p>
-                    <a href="php.html" style="color: black;"> Ver más </a>
-                    <br>
-                </div>
-            </a>
-
-            <a href="java.html" style="text-decoration: none; color: unset">
-                <div class="select1" style="color: black; float: right; margin: 20px; margin-bottom: 100px;">
-                    <img src="img/java.jpg" width="100px" height="60px" alt="">
-                    <p>Curso de Java</p>
-                    <p>$250.000</p>
-                    <a href="java.html" style="color: black;"> Ver más </a>
-                    <br>
-                </div>
-            </a>
-            <a href="css.html" style="text-decoration: none; color: unset">
-                <div class="select1" style="color: black; float: right; margin: 20px">
-                    <img src="img/css.png" width="100px" height="60px" alt="">
-                    <p>Curso de CSS3</p>
-                    <p>$250.000</p>
-                    <a href="css.html" style="color: black;"> Ver más </a>
-                    <br>
-                </div>
-            </a>
+        <div class="course">
+            <img src="img/css.png" alt="Curso de CSS">
+            <p>Curso de CSS3</p>
+            <p>$250.000</p>
+            <a href="css.html">Ver más</a>
+        </div>
     </div>
-    <br>
-    <br>
-    <footer style="color: black; width: 100%; height: 45%;">
-        <hr width="80%">
-        Empresa <a href="a">https://curosOnline.com</a>
+
+    <footer class="footer">
+        <hr>
+        Empresa <a href="https://cursosOnline.com">https://cursosOnline.com</a>
     </footer>
 </body>
 

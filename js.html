@@ -9,6 +9,146 @@
     <title> Curso de JavaScript (JS)</title>
 </head>
 
+<style>
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 15px;
+    }
+
+    .header img {
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .header form {
+        margin-top: -40px;
+    }
+
+    .header .social-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .header .social-icons img {
+        width: 30px;
+        margin-left: 10px;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #444;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu li {
+        display: inline-block;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: white;
+        padding: 14px 20px;
+        display: block;
+    }
+
+    .menu li a:hover {
+        background-color: #555;
+    }
+
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .course {
+        display: inline-block;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .course img {
+        width: 100px;
+        height: 60px;
+    }
+
+    .course p {
+        margin: 5px 0;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        text-align: left;
+        float: left;
+        margin-top: 30px;
+        margin-left: 100px;
+        width: 800px;
+        border: 1px solid black;
+        padding: 1px 20px;
+    }
+
+    .container2 {
+        float: right;
+        text-align: left;
+        margin-top: 30px;
+        margin-right: 30px;
+        margin-bottom: 100px;
+        width: 300px;
+        height: 90%;
+        border: 1px solid black;
+        padding: 1px 20px;
+    }
+
+    .select:hover {
+        box-shadow: 5px 8px 12px black;
+        transition: all 0.5s ease-in-out;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .select1 {
+        width: 130px;
+    }
+
+    .select1:hover {
+        box-shadow: 5px 8px 12px black;
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+</style>
+
 <body>
     <header class="header" style="padding: 15px">
         <a href="index.html"><img
@@ -53,10 +193,11 @@
 
     <div class="container2">
         <h1>$250.000</h1>
-        <button id="botones" type="submit" style="width: 300px; height: 40px;">Comprar</button>
-        <br>
-        <br>
-        <button id="botones" type="submit" style="width: 300px; height: 40px;">Comenzar</button>
+    <button id="botones" type="button" style="width: 300px; height: 40px;" onclick="window.location.href='formularios/compra.html'">Comprar</button>
+    <br>
+    <br>
+    <button id="botones" type="button" style="width: 300px; height: 40px;" onclick="window.location.href='formularios/comenzar.html'">Comenzar</button>
+
         <h2>Información</h2>
         <p>JavaScript es un robusto lenguaje de programación que se puede aplicar a un documento HTML y usarse para crear interactividad dinámica en los sitios web.</p>
     </div>
